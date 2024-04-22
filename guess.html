@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>enter ur name </p>
+    <input type="text" id="inputElement">
+    <p>enter ur name </p>
+    <input type="password">
+
+    <div>
+        <button onclick="signIn()">sign in </button>
+    </div>
+    <p id="signtext"></p>
+
+
+    <script>
+
+        let inputElement = document.getElementById("inputElement");
+        // console.log(inputElement);
+
+        let signElement =  document.getElementById("signtext")
+    
+
+
+        function signIn(){
+
+            let inputvalue = inputElement.value;
+            // console.log(inputvalue);
+
+            let verify = " hi " + inputvalue + " verifying your account.... ";
+
+            signElement.textContent=verify;
+            
+
+        }
+    </script>
+</body>
+</html>
